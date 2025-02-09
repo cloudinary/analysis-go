@@ -202,9 +202,9 @@ func New(opts ...SDKOption) *CloudinaryAnalysis {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "0.2.0",
-			SDKVersion:        "0.1.4",
+			SDKVersion:        "0.1.1",
 			GenVersion:        "2.506.0",
-			UserAgent:         "speakeasy-sdk/go 0.1.4 2.506.0 0.2.0 github.com/cloudinary/analysis-go/cloudinaryanalysis",
+			UserAgent:         "speakeasy-sdk/go 0.1.1 2.506.0 0.2.0 github.com/cloudinary/analysis-go/cloudinaryanalysis",
 			ServerDefaults: []map[string]string{
 				{
 					"cloud_name": "CLOUD_NAME",

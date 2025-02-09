@@ -5,8 +5,10 @@ management:
   docVersion: 0.2.0
   speakeasyVersion: 1.487.1
   generationVersion: 2.506.0
-  releaseVersion: 0.1.0
-  configChecksum: 621c9f5682ec147d3c420a91ddec3bd9
+  releaseVersion: 0.1.1
+  configChecksum: 3a718ba9b4853aea303aade67a652b5e
+  repoURL: https://github.com/cloudinary/analysis-go.git
+  installationURL: https://github.com/cloudinary/analysis-go
 features:
   go:
     additionalDependencies: 0.1.0
