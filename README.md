@@ -51,7 +51,7 @@ Currently supports the following analysis options:
 
 To add the SDK as a dependency to your project:
 ```bash
-go get github.com/cloudinary/analysis-go/cloudinaryanalysis
+go get github.com/cloudinary/analysis-go
 ```
 <!-- End SDK Installation [installation] -->
 
