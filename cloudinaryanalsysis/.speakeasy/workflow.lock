@@ -2,38 +2,38 @@ speakeasyVersion: 1.487.1
 sources:
     Analyze API (Beta):
         sourceNamespace: analyze-api
-        sourceRevisionDigest: sha256:64f3cb17b40344de907e8f60cc3135090deb0d53e0ad22c52b49eb53df79b1bc
+        sourceRevisionDigest: sha256:5b30762bed0d34b90da9a85aa5b8f38d8cc1bede49be137cfe74b6273ffafb4d
         sourceBlobDigest: sha256:8b1b41484d9a7da0aca025cca0b3b7a9ed24e6cecc55d6ba3304a372675bb198
         tags:
             - latest
+            - speakeasy-sdk-regen-1739114906
             - 0.2.0
 targets:
     analysis-go:
         source: Analyze API (Beta)
         sourceNamespace: analyze-api
-        sourceRevisionDigest: sha256:64f3cb17b40344de907e8f60cc3135090deb0d53e0ad22c52b49eb53df79b1bc
+        sourceRevisionDigest: sha256:5b30762bed0d34b90da9a85aa5b8f38d8cc1bede49be137cfe74b6273ffafb4d
         sourceBlobDigest: sha256:8b1b41484d9a7da0aca025cca0b3b7a9ed24e6cecc55d6ba3304a372675bb198
         codeSamplesNamespace: analyze-api-go-code-samples
-        codeSamplesRevisionDigest: sha256:c5a18c13588812e34f2a9e1b8a2d229c34c1a6941a5c0dbdeae064da8bb167e0
+        codeSamplesRevisionDigest: sha256:c653dadf03b7f482323acaea1592363993bb023d7cdf1340aa87dad5a4d4fe03
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
     sources:
         Analyze API (Beta):
             inputs:
-                - location: cloudinaryanalsysis/.speakeasy/schema.yml
+                - location: .speakeasy/schema.yml
             overlays:
-                - location: cloudinaryanalsysis/.speakeasy/cloudinary-security-scheme-overlay.yaml
-                - location: cloudinaryanalsysis/.speakeasy/cloudinary-modifications-overlay.yaml
-                - location: cloudinaryanalsysis/.speakeasy/cloudinary-name-modifications-overlay.yaml
-                - location: cloudinaryanalsysis/.speakeasy/cloudinary-source-modifications-overlay.yaml
+                - location: .speakeasy/cloudinary-security-scheme-overlay.yaml
+                - location: .speakeasy/cloudinary-modifications-overlay.yaml
+                - location: .speakeasy/cloudinary-name-modifications-overlay.yaml
+                - location: .speakeasy/cloudinary-source-modifications-overlay.yaml
             registry:
                 location: registry.speakeasyapi.dev/cloudinary/cloudinary/analyze-api
     targets:
         analysis-go:
             target: go
             source: Analyze API (Beta)
-            output: cloudinaryanalsysis
             codeSamples:
                 registry:
                     location: registry.speakeasyapi.dev/cloudinary/cloudinary/analyze-api-go-code-samples

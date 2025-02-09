@@ -1,14 +1,12 @@
 lockVersion: 2.0.0
-id: 0d35939f-3240-4c71-bf32-5074ea420184
+id: 5ed52179-0aa1-4916-aee3-8985f928e033
 management:
   docChecksum: 5a42adec2c6a0ddc14ff703bae1c2f90
   docVersion: 0.2.0
   speakeasyVersion: 1.487.1
   generationVersion: 2.506.0
-  releaseVersion: 0.1.1
-  configChecksum: 3a718ba9b4853aea303aade67a652b5e
-  repoURL: https://github.com/cloudinary/analysis-go.git
-  installationURL: https://github.com/cloudinary/analysis-go
+  releaseVersion: 0.1.2
+  configChecksum: 765daca439f19f8fc3638419c73cd88d
 features:
   go:
     additionalDependencies: 0.1.0
