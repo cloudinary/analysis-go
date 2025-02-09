@@ -3,19 +3,19 @@ speakeasyVersion: latest
 sources:
     Analyze API (Beta):
         inputs:
-            - location: cloudinaryanalsysis/.speakeasy/schema.yml
+            - location: cloudinaryanalysis/.speakeasy/schema.yml
         overlays:
-            - location: cloudinaryanalsysis/.speakeasy/cloudinary-security-scheme-overlay.yaml
-            - location: cloudinaryanalsysis/.speakeasy/cloudinary-modifications-overlay.yaml
-            - location: cloudinaryanalsysis/.speakeasy/cloudinary-name-modifications-overlay.yaml
-            - location: cloudinaryanalsysis/.speakeasy/cloudinary-source-modifications-overlay.yaml
+            - location: cloudinaryanalysis/.speakeasy/cloudinary-security-scheme-overlay.yaml
+            - location: cloudinaryanalysis/.speakeasy/cloudinary-modifications-overlay.yaml
+            - location: cloudinaryanalysis/.speakeasy/cloudinary-name-modifications-overlay.yaml
+            - location: cloudinaryanalysis/.speakeasy/cloudinary-source-modifications-overlay.yaml
         registry:
             location: registry.speakeasyapi.dev/cloudinary/cloudinary/analyze-api
 targets:
     analysis-go:
         target: go
         source: Analyze API (Beta)
-        output: cloudinaryanalsysis
+        output: cloudinaryanalysis
         codeSamples:
             registry:
                 location: registry.speakeasyapi.dev/cloudinary/cloudinary/analyze-api-go-code-samples
