@@ -1,0 +1,30 @@
+overlay: 1.0.0
+info:
+  title: Cloudinary Security Schema Modifications
+  version: 0.0.0
+actions:
+  - target: $["security"][0]
+    update:
+      cloudinaryAuth: []
+  - target: $["security"][0]["basicAuth"]
+    remove: true
+  - target: $["components"]["securitySchemes"]
+    update:
+      cloudinaryAuth:
+        type: http
+        scheme: custom
+        x-speakeasy-custom-security-scheme:
+          schema:
+            type: object
+            properties:
+              api_key:
+                type: string
+                example: CLOUDINARY_API_KEY
+              api_secret:
+                type: string
+                example: CLOUDINARY_API_SECRET
+            required:
+              - api_key
+              - api_secret
+  - target: $["components"]["securitySchemes"]["basicAuth"]
+    remove: true

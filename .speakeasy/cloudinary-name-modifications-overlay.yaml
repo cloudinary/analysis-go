@@ -1,0 +1,60 @@
+overlay: 1.0.0
+info:
+  title: Cloudinary Name Modifications
+  version: 0.0.6
+  x-speakeasy-metadata:
+    after: ""
+    before: ""
+    type: speakeasy-modifications
+actions:
+  - target: $["paths"]["/tasks/{task_id}"]["get"]
+    update:
+      x-speakeasy-name-override: taskStatus
+  - target: $["paths"]["/analyze/image_quality"]["post"]
+    update:
+      x-speakeasy-name-override: imageQuality
+  - target: $["paths"]["/analyze/ai_vision_tagging"]["post"]
+    update:
+      x-speakeasy-name-override: aiVisionTagging
+  - target: $["paths"]["/analyze/shop_classifier"]["post"]
+    update:
+      x-speakeasy-name-override: shopClassifier
+  - target: $["paths"]["/analyze/watermark_detection"]["post"]
+    update:
+      x-speakeasy-name-override: watermarkDetection
+  - target: $["paths"]["/analyze/coco"]["post"]
+    update:
+      x-speakeasy-name-override: coco
+  - target: $["paths"]["/analyze/cld_text"]["post"]
+    update:
+      x-speakeasy-name-override: cldText
+  - target: $["paths"]["/analyze/google_tagging"]["post"]
+    update:
+      x-speakeasy-name-override: googleTagging
+  - target: $["paths"]["/analyze/unidet"]["post"]
+    update:
+      x-speakeasy-name-override: unidet
+  - target: $["paths"]["/analyze/ai_vision_moderation"]["post"]
+    update:
+      x-speakeasy-name-override: aiVisionModeration
+  - target: $["paths"]["/analyze/lvis"]["post"]
+    update:
+      x-speakeasy-name-override: lvis
+  - target: $["paths"]["/analyze/google_logo_detection"]["post"]
+    update:
+      x-speakeasy-name-override: googleLogoDetection
+  - target: $["paths"]["/analyze/cld_fashion"]["post"]
+    update:
+      x-speakeasy-name-override: cldFashion
+  - target: $["paths"]["/analyze/human_anatomy"]["post"]
+    update:
+      x-speakeasy-name-override: humanAnatomy
+  - target: $["paths"]["/analyze/ai_vision_general"]["post"]
+    update:
+      x-speakeasy-name-override: aiVisionGeneral
+  - target: $["paths"]["/analyze/captioning"]["post"]
+    update:
+      x-speakeasy-name-override: captioning
+  - target: $["paths"]["/tasks/{task_id}"]["get"]
+    update:
+      x-speakeasy-name-override: getStatus

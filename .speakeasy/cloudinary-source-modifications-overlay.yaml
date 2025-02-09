@@ -1,0 +1,44 @@
+overlay: 1.0.0
+info:
+  title: Cloudinary OAS Modifications
+  version: 0.0.0
+actions:
+  - target: $["components"]["schemas"]["Source"]["oneOf"][0]
+    update:
+      type: object
+  - target: $["components"]["schemas"]["Source"]["oneOf"][0]
+    update:
+      x-speakeasy-name-override: uri
+  - target: $["components"]["schemas"]["Source"]["oneOf"][0]["required"][0]
+    update: uri
+  - target: $["components"]["schemas"]["Source"]["oneOf"][0]
+    update:
+      properties:
+        uri:
+          type: string
+          format: uri
+          description: The URI of the asset to analyze
+          example: https://res.cloudinary.com/demo/image/upload/sample.jpg
+  - target: $["components"]["schemas"]["Source"]["oneOf"][0]
+    update:
+      example:
+        uri: https://res.cloudinary.com/demo/image/upload/sample.jpg
+  - target: $["components"]["schemas"]["Source"]["oneOf"][1]
+    update:
+      type: object
+  - target: $["components"]["schemas"]["Source"]["oneOf"][1]
+    update:
+      x-speakeasy-name-override: asset_id
+  - target: $["components"]["schemas"]["Source"]["oneOf"][1]["required"][0]
+    update: asset_id
+  - target: $["components"]["schemas"]["Source"]["oneOf"][1]
+    update:
+      properties:
+        asset_id:
+          type: string
+          description: The asset ID to analyze
+          example: e12345b5c456c8901bbb0efc00c0fcf
+  - target: $["components"]["schemas"]["Source"]["type"]
+    remove: true
+  - target: $["components"]["schemas"]["Source"]["properties"]
+    remove: true

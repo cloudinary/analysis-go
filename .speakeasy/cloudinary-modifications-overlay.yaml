@@ -1,0 +1,20 @@
+overlay: 1.0.0
+info:
+  title: Cloudinary OAS Modifications
+  version: 0.0.0
+actions:
+  # 1) Update top-level tags[0].name to "Analyze"
+  - target: $["tags"][0]["name"]
+    update: Analyze
+
+  # 2) For every POST endpoint whose tags array has "Analysis",
+  #    replace that tag with "Analyze"
+  - target: $["paths"].*["post"].tags[?(@ == "Analysis")]
+    update: Analyze
+
+  # 3) Update /tasks/{task_id} GET security
+  - target: $["paths"]["/tasks/{task_id}"]["get"]["security"][0]
+    update:
+      cloudinaryAuth: []
+  - target: $["paths"]["/tasks/{task_id}"]["get"]["security"][0]["basicAuth"]
+    remove: true

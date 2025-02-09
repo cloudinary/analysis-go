@@ -1,0 +1,23 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Analyze API (Beta):
+        inputs:
+            - location: .speakeasy/schema.yml
+        overlays:
+            - location: .speakeasy/cloudinary-security-scheme-overlay.yaml
+            - location: .speakeasy/cloudinary-modifications-overlay.yaml
+            - location: .speakeasy/cloudinary-name-modifications-overlay.yaml
+            - location: .speakeasy/cloudinary-source-modifications-overlay.yaml
+        registry:
+            location: registry.speakeasyapi.dev/cloudinary/cloudinary/analyze-api
+targets:
+    analysis-go:
+        target: go
+        source: Analyze API (Beta)
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/cloudinary/cloudinary/analyze-api-go-code-samples
+            labelOverride:
+                fixedValue: Go (SDK)
+            blocking: false

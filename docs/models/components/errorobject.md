@@ -1,0 +1,12 @@
+# ErrorObject
+
+
+## Fields
+
+| Field                                                                 | Type                                                                  | Required                                                              | Description                                                           | Example                                                               |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| `Category`                                                            | [*components.ErrorCategory](../../models/components/errorcategory.md) | :heavy_minus_sign:                                                    | N/A                                                                   |                                                                       |
+| `Code`                                                                | **string*                                                             | :heavy_minus_sign:                                                    | N/A                                                                   | MA_00001                                                              |
+| `Message`                                                             | **string*                                                             | :heavy_minus_sign:                                                    | N/A                                                                   | missing parameters                                                    |
+| `Details`                                                             | [*components.Details](../../models/components/details.md)             | :heavy_minus_sign:                                                    | N/A                                                                   | {<br/>"parameters": [<br/>"uri",<br/>"analysis_type"<br/>]<br/>}      |
+| `RequestID`                                                           | **string*                                                             | :heavy_minus_sign:                                                    | N/A                                                                   | 17c3b70c5096df0e77e838323abb7029                                      |

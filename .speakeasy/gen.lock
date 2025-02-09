@@ -1,0 +1,673 @@
+lockVersion: 2.0.0
+id: 0d35939f-3240-4c71-bf32-5074ea420184
+management:
+  docChecksum: 5a42adec2c6a0ddc14ff703bae1c2f90
+  docVersion: 0.2.0
+  speakeasyVersion: 1.487.1
+  generationVersion: 2.506.0
+  releaseVersion: 0.1.0
+  configChecksum: 621c9f5682ec147d3c420a91ddec3bd9
+features:
+  go:
+    additionalDependencies: 0.1.0
+    core: 3.7.0
+    customSecuritySchemes: 0.1.0
+    defaultEnabledRetries: 0.2.0
+    envVarSecurityUsage: 0.3.2
+    flattening: 2.81.1
+    globalSecurity: 2.82.10
+    globalSecurityCallbacks: 0.1.0
+    globalServerURLs: 2.82.2
+    intellisenseMarkdownSupport: 0.1.0
+    nameOverrides: 2.81.2
+    nullables: 0.1.0
+    responseFormat: 0.1.2
+    retries: 2.83.2
+    sdkHooks: 0.1.0
+    unions: 2.85.10
+generatedFiles:
+  - .gitattributes
+  - /models/apierrors/errorresponse.go
+  - /models/apierrors/ratelimitedresponse.go
+  - /models/components/aivisiongeneralanalysisdata.go
+  - /models/components/aivisionmoderationanalysisdata.go
+  - /models/components/aivisiontagginganalysisdata.go
+  - /models/components/analyzeaivisiongeneralrequest.go
+  - /models/components/analyzeaivisiongeneralresponse.go
+  - /models/components/analyzeaivisionmoderationrequest.go
+  - /models/components/analyzeaivisionmoderationresponse.go
+  - /models/components/analyzeaivisiontaggingrequest.go
+  - /models/components/analyzeaivisiontaggingresponse.go
+  - /models/components/analyzecaptioningresponse.go
+  - /models/components/analyzecldfashionresponse.go
+  - /models/components/analyzecldtextresponse.go
+  - /models/components/analyzecocoresponse.go
+  - /models/components/analyzegooglelogodetectionresponse.go
+  - /models/components/analyzegoogletaggingresponse.go
+  - /models/components/analyzehumananatomyresponse.go
+  - /models/components/analyzeimagequalityresponse.go
+  - /models/components/analyzelvisresponse.go
+  - /models/components/analyzeshopclassifierresponse.go
+  - /models/components/analyzeunidetresponse.go
+  - /models/components/analyzewatermarkdetectionresponse.go
+  - /models/components/asyncoperationacceptedresponse.go
+  - /models/components/baseanalyzerequest.go
+  - /models/components/captioninganalysisdata.go
+  - /models/components/cldfashionanalysisdata.go
+  - /models/components/cldtextanalysisdata.go
+  - /models/components/cocoanalysisdata.go
+  - /models/components/errorcategory.go
+  - /models/components/errorobject.go
+  - /models/components/feature.go
+  - /models/components/gettaskstatusresponse.go
+  - /models/components/googlelogodetectionanalysisdata.go
+  - /models/components/googletagginganalysisdata.go
+  - /models/components/httpmetadata.go
+  - /models/components/humananatomyanalysisdata.go
+  - /models/components/imagequalityanalysisdata.go
+  - /models/components/limitsobject.go
+  - /models/components/lvisanalysisdata.go
+  - /models/components/schemecloudinaryauth.go
+  - /models/components/security.go
+  - /models/components/shopclassifieranalysisdata.go
+  - /models/components/source.go
+  - /models/components/taskstatus.go
+  - /models/components/unidetanalysisdata.go
+  - /models/components/watermarkdetectionanalysisdata.go
+  - /models/operations/analyzeaivisiongeneral.go
+  - /models/operations/analyzeaivisionmoderation.go
+  - /models/operations/analyzeaivisiontagging.go
+  - /models/operations/analyzecaptioning.go
+  - /models/operations/analyzecldfashion.go
+  - /models/operations/analyzecldtext.go
+  - /models/operations/analyzecoco.go
+  - /models/operations/analyzegooglelogodetection.go
+  - /models/operations/analyzegoogletagging.go
+  - /models/operations/analyzehumananatomy.go
+  - /models/operations/analyzeimagequality.go
+  - /models/operations/analyzelvis.go
+  - /models/operations/analyzeshopclassifier.go
+  - /models/operations/analyzeunidet.go
+  - /models/operations/analyzewatermarkdetection.go
+  - /models/operations/getanalysistaskstatus.go
+  - USAGE.md
+  - analyze.go
+  - cloudinaryanalysis.go
+  - docs/models/apierrors/errorresponse.md
+  - docs/models/apierrors/ratelimitedresponse.md
+  - docs/models/components/aivisiongeneralanalysisdata.md
+  - docs/models/components/aivisionmoderationanalysisdata.md
+  - docs/models/components/aivisionmoderationanalysisdataresponses.md
+  - docs/models/components/aivisiontagginganalysisdata.md
+  - docs/models/components/analyzeaivisiongeneralrequest.md
+  - docs/models/components/analyzeaivisiongeneralresponse.md
+  - docs/models/components/analyzeaivisionmoderationrequest.md
+  - docs/models/components/analyzeaivisionmoderationresponse.md
+  - docs/models/components/analyzeaivisionmoderationresponsedata.md
+  - docs/models/components/analyzeaivisiontaggingrequest.md
+  - docs/models/components/analyzeaivisiontaggingresponse.md
+  - docs/models/components/analyzeaivisiontaggingresponsedata.md
+  - docs/models/components/analyzecaptioningresponse.md
+  - docs/models/components/analyzecaptioningresponsedata.md
+  - docs/models/components/analyzecldfashionresponse.md
+  - docs/models/components/analyzecldfashionresponsedata.md
+  - docs/models/components/analyzecldtextresponse.md
+  - docs/models/components/analyzecldtextresponsedata.md
+  - docs/models/components/analyzecocoresponse.md
+  - docs/models/components/analyzecocoresponsedata.md
+  - docs/models/components/analyzegooglelogodetectionresponse.md
+  - docs/models/components/analyzegooglelogodetectionresponsedata.md
+  - docs/models/components/analyzegoogletaggingresponse.md
+  - docs/models/components/analyzegoogletaggingresponsedata.md
+  - docs/models/components/analyzehumananatomyresponse.md
+  - docs/models/components/analyzehumananatomyresponsedata.md
+  - docs/models/components/analyzeimagequalityresponse.md
+  - docs/models/components/analyzeimagequalityresponsedata.md
+  - docs/models/components/analyzelvisresponse.md
+  - docs/models/components/analyzelvisresponsedata.md
+  - docs/models/components/analyzeshopclassifierresponse.md
+  - docs/models/components/analyzeshopclassifierresponsedata.md
+  - docs/models/components/analyzeunidetresponse.md
+  - docs/models/components/analyzeunidetresponsedata.md
+  - docs/models/components/analyzewatermarkdetectionresponse.md
+  - docs/models/components/analyzewatermarkdetectionresponsedata.md
+  - docs/models/components/assetid.md
+  - docs/models/components/asyncoperationacceptedresponse.md
+  - docs/models/components/asyncoperationacceptedresponsedata.md
+  - docs/models/components/baseanalyzerequest.md
+  - docs/models/components/boundingpoly.md
+  - docs/models/components/captioninganalysisdata.md
+  - docs/models/components/captioninganalysisdatadata.md
+  - docs/models/components/cldfashionanalysisdata.md
+  - docs/models/components/cldfashionanalysisdatatags.md
+  - docs/models/components/cldtextanalysisdata.md
+  - docs/models/components/cldtextanalysisdatatags.md
+  - docs/models/components/cocoanalysisdata.md
+  - docs/models/components/cocoanalysisdatatags.md
+  - docs/models/components/data.md
+  - docs/models/components/details.md
+  - docs/models/components/detections.md
+  - docs/models/components/errorcategory.md
+  - docs/models/components/errorobject.md
+  - docs/models/components/feature.md
+  - docs/models/components/gettaskstatusresponse.md
+  - docs/models/components/gettaskstatusresponsedata.md
+  - docs/models/components/googlelogodetectionanalysisdata.md
+  - docs/models/components/googletagginganalysisdata.md
+  - docs/models/components/httpmetadata.md
+  - docs/models/components/humananatomyanalysisdata.md
+  - docs/models/components/humananatomyanalysisdatatags.md
+  - docs/models/components/imagequalityanalysisdata.md
+  - docs/models/components/labelannotations.md
+  - docs/models/components/labels.md
+  - docs/models/components/limit.md
+  - docs/models/components/limitsobject.md
+  - docs/models/components/logoannotations.md
+  - docs/models/components/lvisanalysisdata.md
+  - docs/models/components/lvisanalysisdatatags.md
+  - docs/models/components/responses.md
+  - docs/models/components/schemecloudinaryauth.md
+  - docs/models/components/security.md
+  - docs/models/components/shopclassifieranalysisdata.md
+  - docs/models/components/shopclassifieranalysisdatatags.md
+  - docs/models/components/source.md
+  - docs/models/components/tagdefinitions.md
+  - docs/models/components/tags.md
+  - docs/models/components/taskstatus.md
+  - docs/models/components/unidetanalysisdata.md
+  - docs/models/components/unidetanalysisdatatags.md
+  - docs/models/components/uri.md
+  - docs/models/components/value.md
+  - docs/models/components/vertices.md
+  - docs/models/components/watermarkdetectionanalysisdata.md
+  - docs/models/operations/analyzeaivisiongeneralresponse.md
+  - docs/models/operations/analyzeaivisionmoderationresponse.md
+  - docs/models/operations/analyzeaivisiontaggingresponse.md
+  - docs/models/operations/analyzecaptioningresponse.md
+  - docs/models/operations/analyzecldfashionresponse.md
+  - docs/models/operations/analyzecldtextresponse.md
+  - docs/models/operations/analyzecocoresponse.md
+  - docs/models/operations/analyzegooglelogodetectionresponse.md
+  - docs/models/operations/analyzegoogletaggingresponse.md
+  - docs/models/operations/analyzehumananatomyresponse.md
+  - docs/models/operations/analyzeimagequalityresponse.md
+  - docs/models/operations/analyzelvisresponse.md
+  - docs/models/operations/analyzeshopclassifierresponse.md
+  - docs/models/operations/analyzeunidetresponse.md
+  - docs/models/operations/analyzewatermarkdetectionresponse.md
+  - docs/models/operations/getanalysistaskstatusrequest.md
+  - docs/models/operations/getanalysistaskstatusresponse.md
+  - docs/models/operations/option.md
+  - docs/sdks/analyze/README.md
+  - docs/sdks/cloudinaryanalysis/README.md
+  - docs/sdks/tasks/README.md
+  - go.mod
+  - internal/hooks/hooks.go
+  - internal/utils/contenttype.go
+  - internal/utils/env.go
+  - internal/utils/form.go
+  - internal/utils/headers.go
+  - internal/utils/json.go
+  - internal/utils/pathparams.go
+  - internal/utils/queryparams.go
+  - internal/utils/requestbody.go
+  - internal/utils/retries.go
+  - internal/utils/security.go
+  - internal/utils/utils.go
+  - models/apierrors/apierror.go
+  - models/operations/options.go
+  - retry/config.go
+  - tasks.go
+  - types/bigint.go
+  - types/date.go
+  - types/datetime.go
+  - types/decimal.go
+  - types/pointers.go
+examples:
+  analyze_ai_vision_general:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}, "prompts": ["Describe this image in detail", "Does this image contain an insect?"]}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"responses": [{"value": "The image contains one cat."}, {"value": "The cat is on top of the table."}], "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}, "prompts": ["Describe this image in detail", "Does this image contain an insect?"]}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"responses": [{"value": "The image contains one cat."}, {"value": "The cat is on top of the table."}], "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_ai_vision_moderation:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}, "rejection_questions": ["Does this image contain any violent activity?", "Is there any nudity in the image?"]}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"responses": [{"prompt": "Does the image contain any violent activity?", "value": "no"}, {"prompt": "Is there any nudity in the image?", "value": "yes"}], "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}, "rejection_questions": ["Does this image contain any violent activity?", "Is there any nudity in the image?"]}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"responses": [{"prompt": "Does the image contain any violent activity?", "value": "no"}, {"prompt": "Is there any nudity in the image?", "value": "yes"}], "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_ai_vision_tagging:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}, "tag_definitions": [{"name": "cigarettes", "description": "Does the image contain a pack of cigarettes?"}, {"name": "furniture", "description": "Does the image contain any tables, chairs, couches or sofas?"}]}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": [{"name": "cat"}, {"name": "table"}], "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}, "tag_definitions": [{"name": "cigarettes", "description": "Does the image contain a pack of cigarettes?"}, {"name": "furniture", "description": "Does the image contain any tables, chairs, couches or sofas?"}]}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": [{"name": "cat"}, {"name": "table"}], "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_captioning:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"data": {"caption": "A cat sitting on a table"}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"data": {"caption": "A cat sitting on a table"}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_cld_fashion:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_cld_text:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_coco:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_google_logo_detection:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"logo_annotations": [{"mid": "/m/045c7b", "description": "google", "score": 0.980325, "bounding_poly": {"vertices": [{"x": 12, "y": 42}, {"x": 439, "y": 42}, {"x": 439, "y": 285}, {"x": 12, "y": 285}]}}]}}}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"logo_annotations": [{"mid": "/m/045c7b", "description": "google", "score": 0.980325, "bounding_poly": {"vertices": [{"x": 12, "y": 42}, {"x": 439, "y": 42}, {"x": 439, "y": 285}, {"x": 12, "y": 285}]}}]}}}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_google_tagging:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"label_annotations": {"labels": [{"label": "cat", "score": 0.9}, {"label": "table", "score": 0.8}]}}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"label_annotations": {"labels": [{"label": "cat", "score": 0.9}, {"label": "table", "score": 0.8}]}}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_human_anatomy:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_image_quality:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"quality": "medium", "score": 0.45218, "confidence": 0.8, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"quality": "medium", "score": 0.45218, "confidence": 0.8, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_lvis:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_shop_classifier:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_unidet:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"tags": {}, "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  analyze_watermark_detection:
+    UriExample:
+      requestBody:
+        application/json: {"source": {"uri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"detections": [{"name": "banner", "confidence": 0.99}], "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+    AssetIDExample:
+      requestBody:
+        application/json: {"source": {"asset_id": "e12345b5c456c8901bbb0efc00c0fcf"}}
+      responses:
+        "200":
+          application/json: {"limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}, "request_id": "17c3b70c5096df0e77e838323abb7029", "data": {"analysis": {"detections": [{"name": "banner", "confidence": 0.99}], "model_version": 1}}}
+        "202":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "pending"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+  get_analysis_task_status:
+    "":
+      parameters:
+        path:
+          task_id: "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb"
+      responses:
+        "200":
+          application/json: {"data": {"task_id": "053f4bde4b933c8ecef23724ecde63b667c1ea21816d56c161c7ec1df6297da4b43109625650e9edf0f42152cc4cc32c8ad57824ac75ba8e05020f827c415559ac1248076a2d72c0a73af0479cca77eb", "status": "processing"}, "request_id": "17c3b70c5096df0e77e838323abb7029"}
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+        "429":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}, "limits": {"items": [{"type": "ai_vision", "used_by_request": 123, "remaining": 500, "limit": 10000, "reset_time": "2024-01-20T12:34:56Z"}]}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "MA_00001", "message": "missing parameters", "request_id": "17c3b70c5096df0e77e838323abb7029"}}
+examplesVersion: 1.0.0
+generatedTests: {}

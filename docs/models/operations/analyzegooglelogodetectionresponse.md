@@ -1,0 +1,9 @@
+# AnalyzeGoogleLogoDetectionResponse
+
+
+## Fields
+
+| Field                                                                                                           | Type                                                                                                            | Required                                                                                                        | Description                                                                                                     |
+| --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                                      | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                              | :heavy_check_mark:                                                                                              | N/A                                                                                                             |
+| `AnalyzeGoogleLogoDetectionResponse`                                                                            | [*components.AnalyzeGoogleLogoDetectionResponse](../../models/components/analyzegooglelogodetectionresponse.md) | :heavy_minus_sign:                                                                                              | Analysis succeeded                                                                                              |

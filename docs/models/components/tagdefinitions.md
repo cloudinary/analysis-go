@@ -1,0 +1,9 @@
+# TagDefinitions
+
+
+## Fields
+
+| Field                                                                                         | Type                                                                                          | Required                                                                                      | Description                                                                                   | Example                                                                                       |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `Name`                                                                                        | *string*                                                                                      | :heavy_check_mark:                                                                            | The name of the tag to apply. This can be any string and does not affect the decision process | cigarettes                                                                                    |
+| `Description`                                                                                 | *string*                                                                                      | :heavy_check_mark:                                                                            | A description to be used by the AI to determine whether the tag should be applied             | Does the image contain a pack of cigarettes?                                                  |

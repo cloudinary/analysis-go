@@ -1,0 +1,9 @@
+# AnalyzeAIVisionTaggingResponseData
+
+
+## Fields
+
+| Field                                                                                             | Type                                                                                              | Required                                                                                          | Description                                                                                       |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `Entity`                                                                                          | **string*                                                                                         | :heavy_minus_sign:                                                                                | N/A                                                                                               |
+| `Analysis`                                                                                        | [*components.AIVisionTaggingAnalysisData](../../models/components/aivisiontagginganalysisdata.md) | :heavy_minus_sign:                                                                                | N/A                                                                                               |
